@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ryan/catkin_ws/src/loa_bot/build/devel/setup.sh

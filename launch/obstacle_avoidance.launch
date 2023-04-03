@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+
+<!-- recieves LiDAR sensor data and publishes obstacle data -->
+<node pkg="loa_bot" type="obstacle_detector.py" name="obstacle_detector" output="screen"></node>
+
+<!-- publishes velocity commands from given obstacle data -->
+<node pkg="loa_bot" type="roaming_controller.py" name="roaming_controller" output="screen"></node>
+
+</launch>
