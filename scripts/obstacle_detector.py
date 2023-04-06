@@ -8,7 +8,7 @@ if __name__ == "__main__":
         rospy.init_node("obstacle_detector")
         rospy.loginfo("obstacle_detector node is activated")
         
-        obstacle_posistion_pub = rospy.Publisher('obstacle_detector', Obstacle, queue_size=1)
+        obstacle_posistion_pub = rospy.Publisher('obstacle_data', Obstacle, queue_size=1)
         obstacle_posistion_msg = Obstacle()
 
         #  Continuously recieve LiDar data and publish Obstacle data

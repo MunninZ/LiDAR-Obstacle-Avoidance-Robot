@@ -38,7 +38,7 @@ if __name__ == "__main__":
         rospy.loginfo("roaming_controller node is activated")
         
         cmd_vel_pub = rospy.Publisher('cmd_vel', Twist, queue_size=10)
-        obstacle_sub = rospy.Subscriber('obstacle_detector', Obstacle, callback=obstacle_avoidace)
+        obstacle_sub = rospy.Subscriber('obstacle_data', Obstacle, callback=obstacle_avoidace)
         
         cmd_vel_msg = Twist()
         
